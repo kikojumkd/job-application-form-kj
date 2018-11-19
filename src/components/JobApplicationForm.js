@@ -37,6 +37,17 @@ class JobApplicationForm extends Component {
 
 	}
 
+	handleReset = (e) => {
+		e.preventDefault();
+		this.getName.value = '';
+		this.getEmail.value = '';
+		this.getPhone.value = '';
+		this.getCountry.value = '';
+		this.getAddress.value = '';
+		this.getMessage.value = '';
+		this.getPosition.value = '';
+	}
+
 	render() {
 		return (
 			<div className="post-container">
@@ -57,16 +68,19 @@ class JobApplicationForm extends Component {
 						<label>Address &nbsp;</label>
 						<input required type="text" ref={(input) => this.getAddress = input} placeholder="Enter your address" /></div><br />
 					<div className="form-element">	
-					<label>Say something</label>
+					<label className="textarea-label">Say something</label>
 					<textarea required rows="5" ref={(input) => this.getMessage = input} cols="28" placeholder="Enter message" /></div><br />
 					<div className="form-element">
 						<label>Position</label>
 						<select ref={(input) => this.getPosition = input}>
-							<option value="software engineer 1">Software Engineer 1</option>
-							<option value="software engineer 2">Software Engineer 2</option>
-							<option value="other">Other</option>
+							<option value="Software Engineer 1">Software Engineer 1</option>
+							<option value="Software Engineer 2">Software Engineer 2</option>
+							<option value="Other">Other</option>
 						</select><br /></div><br />
-   					<button>Post</button>
+					<div className="btn-wrapper">
+   						<button>Submit Form</button>
+   						<button onClick={this.handleReset}>Reset</button>
+   					</div>
 				</form>
 			</div>
 		);

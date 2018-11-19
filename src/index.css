@@ -82,6 +82,10 @@ align-items: center;
 	display: inline-block;
 }
 
+.form .textarea-label {
+	vertical-align: top;
+}
+
 
 .form input {
 height:44px;
@@ -172,6 +176,8 @@ font-family:'Nunito',sans-serif;
 border-radius:4px;
 border:2px solid rgb(191, 190, 190);
 font-size:20px;
+cursor: pointer;
+font-weight: 600;
 }
 
 
