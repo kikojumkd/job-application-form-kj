@@ -1,7 +1,7 @@
 body {
 margin: 0;
 padding: 0;
-font-family: 'Work Sans',sans-serif;
+font-family: 'Nunito',sans-serif;
 background: rgb(39, 39, 39);
 }
 
@@ -41,7 +41,7 @@ margin:0;
 font-weight:200;
 font-size:30px;
 letter-spacing: 4px;
-font-family:'Work Sans',sans-serif;
+font-family:'Nunito',sans-serif;
 color: rgb(191, 190, 190);
 }
 
@@ -52,8 +52,7 @@ background:#393c3e;
 padding:50px;
 width:50%;
 margin:40px auto;
-box-shadow:0 5px 15px 0 rgba(46, 61, 73, 0.12);
-font-family:'Work Sans',sans-serif;
+font-family:'Nunito',sans-serif;
 }
 
 
@@ -72,8 +71,15 @@ justify-content: center;
 align-items: center;
 }
 
+.form-element {
+	width: 100%;
+	text-align: center;
+}
+
 .form label {
 	color: rgb(191, 190, 190);
+	width: 15%;
+	display: inline-block;
 }
 
 
@@ -82,43 +88,41 @@ height:44px;
 background: rgb(132, 136, 134);
 padding-left:15px;
 padding-right:15px;
-border: 2px solid rgb(39, 39, 39);
+border: none;
 font-size:14px;
 border-radius:3px;
 color:rgb(191, 190, 190);
-box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
 outline:none;
-width:80%;
+width:50%;
 }
 
 
 .form textarea {
-width:80%;
+width:50%;
 max-width:80%;
 background: rgb(132, 136, 134);
 padding-left:15px;
 padding-right:15px;
 padding-top:15px;
-border: 2px solid rgb(39, 39, 39);
+border: none;
 font-size:14px;
 border-radius:3px;
 color:rgb(191, 190, 190);
-font-family: 'Work Sans,',sans-serif;
-box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+font-family: 'Nunito,',sans-serif;
 outline:none;
 }
 
 .form select {
 height:44px;
+background: rgb(132, 136, 134);
 padding-left:5px;
 padding-right:5px;
-border: 1px solid #dbe2e8;
+border: none;
 font-size:14px;
 border-radius:2px;
-color:#636363;
-box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+color:rgb(191, 190, 190);
 outline:none;
-width:80%;
+width:50%;
 }
 
 ::placeholder {
@@ -149,7 +153,8 @@ word-wrap: break-word;
 
 
 .post {
-background:#fff;
+background:#393c3e;
+color: rgb(191, 190, 190);
 width:60%;
 margin:0 auto;
 padding:30px;
@@ -159,13 +164,13 @@ box-shadow: 10px 10px 12px 0 rgba(46, 60, 73, 0.05);
 
 
 .form button {
-background:#02b3e4;
+background: transparent;
 padding:15px 40px;
 text-align: center;
-color:#fff;
-font-family:'Work Sans',sans-serif;
+color: rgb(191, 190, 190);
+font-family:'Nunito',sans-serif;
 border-radius:4px;
-border:none;
+border:2px solid rgb(191, 190, 190);
 font-size:20px;
 }
 
@@ -174,7 +179,7 @@ font-size:20px;
 text-align:center;
 font-weight:400;
 font-size:40px;
-color:#636363;
+color:rgb(191, 190, 190);
 word-wrap: break-word;
 }
 

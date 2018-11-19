@@ -41,24 +41,31 @@ class JobApplicationForm extends Component {
 		return (
 			<div className="post-container">
 				<form className="form" onSubmit={this.handleSubmit}>
+					<div className="form-element">
 					<label>Full Name &nbsp;</label>
-					<input required type="text" ref={(input) => this.getName = input} placeholder="Enter your full name" /><br />
-					<label>Email &nbsp;</label>
-					<input required type="email" ref={(input) => this.getEmail = input} placeholder="Enter your email" /><br />
-					<label>Phone number &nbsp;</label>
-					<input required type="number" ref={(input) => this.getPhone = input} placeholder="Enter your phone number" /><br />
-					<label>Country &nbsp;</label>
-					<input required type="text" ref={(input) => this.getCountry = input} placeholder="Enter your country" /><br />
-					<label>Address &nbsp;</label>
-					<input required type="text" ref={(input) => this.getAddress = input} placeholder="Enter your address" /><br />
-					<label>Say something about you</label><br />
-					<textarea required rows="5" ref={(input) => this.getMessage = input} cols="28" placeholder="Enter message" /><br />
-					<label>Position</label>
-					<select ref={(input) => this.getPosition = input}>
-						<option value="software engineer 1">Software Engineer 1</option>
-						<option value="software engineer 2">Software Engineer 2</option>
-						<option value="other">Other</option>
-					</select><br /><br />
+					<input required type="text" ref={(input) => this.getName = input} placeholder="Enter your full name" /></div><br />
+					<div className="form-element">
+						<label>Email &nbsp;</label>
+						<input required type="email" ref={(input) => this.getEmail = input} placeholder="Enter your email" /></div><br />
+					<div className="form-element">
+						<label>Phone number &nbsp;</label>
+						<input required type="number" ref={(input) => this.getPhone = input} placeholder="Enter your phone number" /></div><br />
+					<div className="form-element">
+						<label>Country &nbsp;</label>
+						<input required type="text" ref={(input) => this.getCountry = input} placeholder="Enter your country" /></div><br />
+					<div className="form-element">
+						<label>Address &nbsp;</label>
+						<input required type="text" ref={(input) => this.getAddress = input} placeholder="Enter your address" /></div><br />
+					<div className="form-element">	
+					<label>Say something</label>
+					<textarea required rows="5" ref={(input) => this.getMessage = input} cols="28" placeholder="Enter message" /></div><br />
+					<div className="form-element">
+						<label>Position</label>
+						<select ref={(input) => this.getPosition = input}>
+							<option value="software engineer 1">Software Engineer 1</option>
+							<option value="software engineer 2">Software Engineer 2</option>
+							<option value="other">Other</option>
+						</select><br /></div><br />
    					<button>Post</button>
 				</form>
 			</div>
